@@ -1,0 +1,18 @@
+Built Meridian Bank — a full-stack banking demo to practice the security
+engineering real fintech actually runs on (not just CRUD behind a login).
+
+Stack: Flask + PostgreSQL API, React + Vite + Tailwind front end.
+
+Under the hood:
+🔐 Hybrid JWT-in-httponly-cookie auth with rotating, revocable refresh tokens + double-submit CSRF
+📲 OTP-gated login (pluggable SMS: console / mock / Twilio)
+🧾 Encrypted PII at rest (Fernet), hashed passwords, RBAC
+🪪 KYC onboarding + review workflow
+🕵️ AML monitoring (large-txn + structuring detection) and a tamper-evident, hash-chained audit log
+✅ Transfers require admin approval with balance re-validation at approval time
+
+I also wrote a COMPLIANCE.md that's honest about what's simulated vs. what real
+PCI-DSS/KYC/AML actually demands (licensing, audits, regulator filings).
+
+Fictional bank, real engineering. Code on GitHub 👇
+#fullstack #softwareengineering #fintech #cybersecurity #react #python
