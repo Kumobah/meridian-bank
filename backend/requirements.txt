@@ -1,0 +1,14 @@
+Flask==3.0.3
+Flask-Cors==4.0.1
+Flask-SQLAlchemy==3.1.1
+psycopg[binary]
+Werkzeug==3.0.3
+cryptography==43.0.1
+python-dotenv==1.0.1
+PyJWT==2.9.0
+reportlab==4.2.5
+gunicorn==23.0.0
+
+# Optional - only needed if you set TWILIO_* env vars / SMS_PROVIDER=twilio.
+# Safe to leave uninstalled; sms.py falls back to the console provider without it.
+twilio==9.3.2
